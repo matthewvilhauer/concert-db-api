@@ -26,7 +26,7 @@ module.exports = {
         },
 
         // Add a reference to Concert
-        concerts: {
+        concertperformances: {
             collection: 'concert',
             via: 'bands',
             dominant: true

@@ -48,9 +48,9 @@ module.exports = {
         // Add associations to Bands
         bands: {
             collection: 'band',
-            via: 'concerts'
+            via: 'concertperformances'
         },
-        
+
         attendees: {
             collection: 'user',
             via: 'myconcerts'
