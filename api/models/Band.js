@@ -25,6 +25,18 @@ module.exports = {
             defaultsTo: ''
         },
 
+        // Add a association to Concerts
+        concertperformances: {
+            collection: 'concert',
+            via: 'bands',
+            dominant: true
+        },
+        // Add a association to Favorites
+        favoritebands: {
+            collection: 'user',
+            via: 'bands'
+        },
+
         toJSON() {
             return this.toObject();
         }
