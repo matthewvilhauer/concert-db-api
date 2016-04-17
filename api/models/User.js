@@ -47,6 +47,13 @@ module.exports = {
             defaultsTo: {}
         },
 
+        // Add associations to Bands
+        myconcerts: {
+            collection: 'concert',
+            via: 'attendees',
+            dominant: true
+        },
+
         toJSON() {
             let obj = this.toObject();
 

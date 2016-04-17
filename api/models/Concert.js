@@ -50,6 +50,11 @@ module.exports = {
             collection: 'band',
             via: 'concerts'
         },
+        
+        attendees: {
+            collection: 'user',
+            via: 'myconcerts'
+        },
 
         toJSON() {
             return this.toObject();
