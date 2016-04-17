@@ -25,6 +25,13 @@ module.exports = {
             defaultsTo: ''
         },
 
+        // Add a reference to Concert
+        concerts: {
+            collection: 'concert',
+            via: 'bands',
+            dominant: true
+        },
+
         toJSON() {
             return this.toObject();
         }

@@ -45,6 +45,12 @@ module.exports = {
             defaultsTo: ''
         },
 
+        // Add associations to Bands
+        bands: {
+            collection: 'band',
+            via: 'concerts'
+        },
+
         toJSON() {
             return this.toObject();
         }
