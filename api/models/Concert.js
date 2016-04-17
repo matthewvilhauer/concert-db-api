@@ -50,10 +50,15 @@ module.exports = {
             collection: 'band',
             via: 'concertperformances'
         },
-
+        // Add associations to Users
         attendees: {
             collection: 'user',
             via: 'myconcerts'
+        },
+        // Add associations to Favorites
+        favoriteconcerts: {
+            collection: 'user',
+            via: 'concerts'
         },
 
         toJSON() {
