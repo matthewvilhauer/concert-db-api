@@ -6,11 +6,12 @@
  */
 
 module.exports = {
-  port: 3000,
-  log: {
-    level: 'verbose'
-  },
-  models: {
-    connection: 'disk'
-  }
+    port: 3000,
+    log: {
+        level: 'verbose'
+    },
+    models: {
+        connection: 'postgresql',
+        migrate: 'drop'
+    }
 };
